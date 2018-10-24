@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <link rel="icon" href="assets/images/logos/PH-logo.gif" type="image/gif" sizes="16x16">
+  <meta charset="UTF-8">
+  <title>Pembroke Hill Soccer</title>
+  <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header id="masthead">
+    <h3>The Pembroke Hill School</h1>
+      <br>
+    <h1>RAIDER SOCCER</h1>
+  </header>
+
+  <div class="navbar">
+      <a href="index.html">HOME</a>
+      <a class="active">PHOTOS</a>
+      <a href="schedule.html">SCHEDULE</a>
+      <a href="roster.html">ROSTER</a>
+      <a href="coaches.html">COACHES</a>
+      <a href="tradition.html">TRADITION</a>
+      <a href="https://www.pembrokehill.org/athletics">PHS ATHLETICS</a>
+  </div>
+
+  <div class="w3-content w3-display-container">
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    <img class="photoCarousel" src="assets/images/carousel/1.jpeg">
+    <img class="photoCarousel" src="assets/images/carousel/2.jpeg">
+    <img class="photoCarousel" src="assets/images/carousel/3.jpeg">
+    <img class="photoCarousel" src="assets/images/carousel/4.jpeg">
+    <img class="photoCarousel" src="assets/images/carousel/5.jpeg">
+    <img class="photoCarousel" src="assets/images/carousel/6.jpeg">
+    <img class="photoCarousel" src="assets/images/carousel/7.jpeg">
+    <img class="photoCarousel" src="assets/images/carousel/8.jpeg">
+    <img class="photoCarousel" src="assets/images/carousel/9.jpeg">
+    <img class="photoCarousel" src="assets/images/carousel/10.jpeg">
+    <img class="photoCarousel" src="assets/images/carousel/11.jpeg">
+    <img class="photoCarousel" src="assets/images/carousel/12.jpeg">
+    <img class="photoCarousel" src="assets/images/carousel/13.jpeg">
+    <img class="photoCarousel" src="assets/images/carousel/14.jpeg">
+    <img class="photoCarousel" src="assets/images/carousel/15.jpeg">
+    <img class="photoCarousel" src="assets/images/carousel/16.jpeg">
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("photoCarousel");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+
+  <footer>
+    <div class="container">
+      &copy; 2018 | MRK creative
+    </div>
+  </footer>
+
+</body>
+
+</html>

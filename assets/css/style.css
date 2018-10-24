@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  background: white;
+  color: navy;
+}
+
+body {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  line-height: 34px;
+  text-align: center;
+}
+
+h1 {
+  font-family: Copperplate, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 60px;
+  font-style: bold;
+  line-height: 20px;
+}
+
+h2 {
+  margin-top: 7px;
+  padding: 5px;
+  font-family: Copperplate, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 46px;
+  font-style: bold;
+}
+
+h3 {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #A00000;
+}
+
+/* header */
+
+header {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  clear: both;
+  line-height: 15px;
+  background: white;
+  color: navy;
+  border-top: 1px solid #A00000;
+  border-bottom: 1px solid #A00000;
+  padding-top: 5px;
+  padding-left: 10%;
+  margin: 0 0 10px;
+  overflow: auto;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+#girls-logo {
+  padding: 15px 5%;
+  margin: auto;
+  vertical-align: center;
+  float: left;
+  font-weight: bold;
+}
+
+.girls-logo-masthead {
+  float: left;
+  height: 100px;
+  width: 70px;
+}
+
+.text-masthead {
+  padding: 12px 5%;
+  margin: auto;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#boys-logo {
+  padding: 15px 5%;
+  margin: auto;
+  vertical-align: center;
+  float: left;
+  font-weight: bold;
+}
+
+.boys-logo-masthead {
+  float: left;
+  height: 100px;
+  width: 70px;
+}
+
+/* main section */
+
+.w3-content {
+  margin-top: 20px;
+}
+
+.main-section {
+  width: 90%;
+  margin: auto;
+  max-width: 980px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background: white;
+  color: darkgrey;
+}
+
+.photoCarousel {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+/* footer */
+
+footer {
+  clear: both;
+  font-size: 12px;
+  line-height: 50px;
+  color: navy;
+  text-align: center;
+  background: white;
+  border-top: 1px solid #A00000;
+  border-bottom: 1px solid #A00000;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* responsive styling */
+
+@media only screen and (max-width: 980px) {
+  .main-section {
+    max-width: 768px;
+  }
+  .navbar a {
+    padding: 14px 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-section {
+    max-width: 640px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 1px;
+  }
+  h1 {
+    font-size: 60px;
+    line-height: 2px;
+  }
+  .navbar a {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main-section {
+    max-width: 480px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 0px;
+  }
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 14px 60px;
+    text-decoration: none;
+    font-size: 24px;
+  }
+}
