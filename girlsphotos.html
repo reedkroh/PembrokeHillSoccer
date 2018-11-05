@@ -1,79 +1,58 @@
 <!doctype html>
 <html lang="en-us">
+
 <head>
-  <link rel="icon" href="assets/images/logos/PH-logo.gif" type="image/gif" sizes="16x16">
   <meta charset="UTF-8">
   <title>Pembroke Hill Soccer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" 
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
     crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/PH-logo.gif" type="image/gif" sizes="16x16">
 </head>
 
 <body>
 
-  <header id="masthead">
-    <h3>The Pembroke Hill School</h1>
-      <br>
-    <h1>RAIDER SOCCER</h1>
+  <header id="masthead" class="girls-news-masthead">
+    <div id="girls-logo">
+      <a href="girlsnews.html">
+      <img src="assets/images/GirlsLogo.png"
+      class="girls-logo-masthead2" alt="GirlsLogo"></a>
+    </div>
+    <div class="text-masthead">
+      <h1 class="masthead2">RAIDER SOCCER</h1>
+    </div>
+    <div id="boys-logo">
+      <a href="boysnews.html">
+      <img src="assets/images/BoysLogo.png"
+      class="boys-logo-masthead2" alt="BoysLogo"></a>
+    </div>
   </header>
 
-  <div class="navbar">
-      <a href="index.html">HOME</a>
-      <a class="active">PHOTOS</a>
-      <a href="schedule.html">SCHEDULE</a>
-      <a href="roster.html">ROSTER</a>
-      <a href="coaches.html">COACHES</a>
-      <a href="tradition.html">TRADITION</a>
-      <a href="https://www.pembrokehill.org/athletics">PHS ATHLETICS</a>
-  </div>
+  <nav class="girlsnavbar">
+    <a class="active" href="">GIRLS</a>
+    <a href="girlsnews.html">NEWS</a>
+    <a class="active" href="">PHOTOS</a>
+    <a href="girlsschedule.html">SCHEDULE</a>
+    <a href="girlsroster.html">ROSTER</a>
+    <a href="girlscoaches.html">COACHES</a>
+    <a href="girlstradition.html">TRADITION</a>
+    <a href="https://www.pembrokehill.org/athletics">PHS ATHLETICS</a>
+    <a href="boysnews.html">BOYS</a>
+  </nav>
 
-  <div class="w3-content w3-display-container">
-      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-    <img class="photoCarousel" src="assets/images/carousel/1.jpeg">
-    <img class="photoCarousel" src="assets/images/carousel/2.jpeg">
-    <img class="photoCarousel" src="assets/images/carousel/3.jpeg">
-    <img class="photoCarousel" src="assets/images/carousel/4.jpeg">
-    <img class="photoCarousel" src="assets/images/carousel/5.jpeg">
-    <img class="photoCarousel" src="assets/images/carousel/6.jpeg">
-    <img class="photoCarousel" src="assets/images/carousel/7.jpeg">
-    <img class="photoCarousel" src="assets/images/carousel/8.jpeg">
-    <img class="photoCarousel" src="assets/images/carousel/9.jpeg">
-    <img class="photoCarousel" src="assets/images/carousel/10.jpeg">
-    <img class="photoCarousel" src="assets/images/carousel/11.jpeg">
-    <img class="photoCarousel" src="assets/images/carousel/12.jpeg">
-    <img class="photoCarousel" src="assets/images/carousel/13.jpeg">
-    <img class="photoCarousel" src="assets/images/carousel/14.jpeg">
-    <img class="photoCarousel" src="assets/images/carousel/15.jpeg">
-    <img class="photoCarousel" src="assets/images/carousel/16.jpeg">
+  <div class="photos">
+    <a href="https://www.shutterfly.com">SHUTTERFLY</a>
   </div>
-  
-  <script>
-  var slideIndex = 1;
-  showDivs(slideIndex);
-  
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-  
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("photoCarousel");
-    if (n > x.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    x[slideIndex-1].style.display = "block";  
-  }
-  </script>
 
   <footer>
     <div class="container">
-      &copy; 2018 | MRK creative
-    </div>
+        MRK creative © 2018. All Rights Reserved.
+      </div>
   </footer>
 
 </body>
