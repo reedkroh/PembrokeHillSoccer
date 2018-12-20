@@ -5,12 +5,11 @@
   <meta charset="UTF-8">
   <title>Pembroke Hill Soccer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" 
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="icon" href="assets/images/PH-logo.gif" type="image/gif" sizes="16x16">
 </head>
@@ -20,72 +19,68 @@
   <header id="masthead">
     <div id="girls-logo">
       <a href="girlsnews.html">
-      <img src="assets/images/GirlsLogo.png"
-      class="girls-logo-masthead" alt="GirlsLogo"></a>
+        <img src="assets/images/GirlsLogo.png" class="girls-logo-masthead" alt="GirlsLogo"></a>
     </div>
     <div class="text-masthead">
       <h3 class="masthead1">The Pembroke Hill School</h3><br>
       <h1 class="masthead2">RAIDER SOCCER</h1><br>
-      <h3 class="masthead3">TRADITION NEVER GRADUATES</h3>
     </div>
     <div id="boys-logo">
       <a href="boysnews.html">
-      <img src="assets/images/BoysLogo.png"
-      class="boys-logo-masthead" alt="BoysLogo"></a>
+        <img src="assets/images/BoysLogo.png" class="boys-logo-masthead" alt="BoysLogo"></a>
     </div>
   </header>
 
-  <div class="w3-content w3-display-container">
+  <div id="index-news-links">
     <a href="girlsnews.html">
-      <button id="index-page-links" class="girls-news">GIRLS</button>
+      <button class="girls-news">GIRLS</button>
     </a>
+    <p class="tng">TRADITION NEVER GRADUATES</p>
     <a href="boysnews.html">
-      <button id="index-page-links" class="boys-news">BOYS</button>
+      <button class="boys-news">BOYS</button>
     </a>
-    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-      <img class="photoCarousel" src="assets/images/carousel/1.jpeg">
-      <img class="photoCarousel" src="assets/images/carousel/2.jpeg">
-      <img class="photoCarousel" src="assets/images/carousel/3.jpeg">
-      <img class="photoCarousel" src="assets/images/carousel/4.jpeg">
-      <img class="photoCarousel" src="assets/images/carousel/5.jpeg">
-      <img class="photoCarousel" src="assets/images/carousel/6.jpeg">
-      <img class="photoCarousel" src="assets/images/carousel/7.jpeg">
-      <img class="photoCarousel" src="assets/images/carousel/8.jpeg">
-      <img class="photoCarousel" src="assets/images/carousel/9.jpeg">
-      <img class="photoCarousel" src="assets/images/carousel/10.jpeg">
-      <img class="photoCarousel" src="assets/images/carousel/11.jpeg">
-      <img class="photoCarousel" src="assets/images/carousel/12.jpeg">
-      <img class="photoCarousel" src="assets/images/carousel/13.jpeg">
-      <img class="photoCarousel" src="assets/images/carousel/14.jpeg">
-      <img class="photoCarousel" src="assets/images/carousel/15.jpeg">
-      <img class="photoCarousel" src="assets/images/carousel/16.jpeg">
-    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <div class="w3-content w3-section" style="max-width:500px">
+    <img class="mySlides w3-animate-fading" src="assets/images/carousel/1.jpeg">
+    <img class="mySlides w3-animate-fading" src="assets/images/carousel/2.jpeg">
+    <img class="mySlides w3-animate-fading" src="assets/images/carousel/3.jpeg">
+    <img class="mySlides w3-animate-fading" src="assets/images/carousel/4.jpeg">
+    <img class="mySlides w3-animate-fading" src="assets/images/carousel/5.jpeg">
+    <img class="mySlides w3-animate-fading" src="assets/images/carousel/6.jpeg">
+    <img class="mySlides w3-animate-fading" src="assets/images/carousel/7.jpeg">
+    <img class="mySlides w3-animate-fading" src="assets/images/carousel/8.jpeg">
+    <img class="mySlides w3-animate-fading" src="assets/images/carousel/9.jpeg">
+    <img class="mySlides w3-animate-fading" src="assets/images/carousel/10.jpeg">
+    <img class="mySlides w3-animate-fading" src="assets/images/carousel/11.jpeg">
+    <img class="mySlides w3-animate-fading" src="assets/images/carousel/12.jpeg">
+    <img class="mySlides w3-animate-fading" src="assets/images/carousel/13.jpeg">
+    <img class="mySlides w3-animate-fading" src="assets/images/carousel/14.jpeg">
+    <img class="mySlides w3-animate-fading" src="assets/images/carousel/15.jpeg">
+    <img class="mySlides w3-animate-fading" src="assets/images/carousel/16.jpeg">
   </div>
 
   <script>
-  var slideIndex = 1;
-  showDivs(slideIndex);
+    var myIndex = 0;
+    carousel();
 
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("photoCarousel");
-    if (n > x.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 3500);
     }
-    x[slideIndex-1].style.display = "block";  
-  }
   </script>
 
   <footer>
     <div class="container">
-        MRK creative © 2018. All Rights Reserved.
-      </div>
+      © 2018 MRK creative. All Rights Reserved.
+    </div>
   </footer>
 
 </body>
