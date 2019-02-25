@@ -2,56 +2,60 @@
 <html lang="en-us">
 
 <head>
+  <title>PHS Soccer</title>
   <meta charset="UTF-8">
-  <title>Pembroke Hill Soccer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="icon" href="assets/images/PH-logo.gif" type="image/gif" sizes="16x16">
+  <link rel="icon" href="assets/images/PH-logo.png" type="image/gif" sizes="16x16">
 </head>
 
 <body>
 
-  <header id="masthead-2">
-    <div class="girls-logo-2">
-      <a href="girlsnews.html">
-      <img src="assets/images/GirlsLogo.png"
-      class="girls-logo-masthead-2" alt="GirlsLogo"></a>
-    </div>
-    <div class="text-masthead-2"><a href="index.html">
-      <h1 class="text-masthead-2">RAIDER SOCCER</h1></a>
-    </div>
-    <div class="boys-logo-2">
-      <a href="boysnews.html">
-      <img src="assets/images/BoysLogo.png"
-      class="boys-logo-masthead-2" alt="BoysLogo"></a>
-    </div>
+  <header id="masthead">
+    <div class="topnav">
+      <img src="assets/images/GirlsLogo.png" class="girls-logo-masthead" alt="GirlsLogo">
+      <h1 class="masthead">PHS SOCCER</h1>
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="girlsschedule.html">Schedule</a>
+        <a href="girlsroster.html">Roster</a>
+        <a href="girlscoaches.html" class="active">Coaches</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>  
   </header>
 
-  <nav class="girlsnavbar">
-    <a class="active" href="">GIRLS</a>
-    <a href="girlsnews.html">NEWS</a>
-    <a href="girlsgames.html">GAMES</a>
-    <a href="girlsphotos.html">PHOTOS</a>
-    <a href="girlsschedule.html">SCHEDULE</a>
-    <a href="girlsroster.html">ROSTER</a>
-    <a class="active" href="">COACHES</a>
-    <a href="girlstradition.html">TRADITION</a>
-    <a href="https://www.pembrokehill.org/athletics">PHS ATHLETICS</a>
-    <a class="girlsnavbar-boys" href="boysnews.html">BOYS</a>
-  </nav>
-
-  <div class="girls-news-content">
+  <div class="content">
+    <h2><b>2019 MIDDLE SCHOOL<br>
+    GIRLS SOCCER COACHES</b></h2><br>
+      <p>Head Coach: Reed Kroh<br>
+      email: rkroh@pembrokehill.org<br>
+      cell phone: 816-352-2253<br>
+      <br>
+      Assistant Coach: Jefferson Wolfe<br>
+      email: jwolfe@pembrokehill.org<br>
+      <br>
+      Assistant Coach: Aubrey Remy<br>
+      email: aremy@pembrokehill.org<br>
+      </p>
   </div>
 
-  <footer>
-      <div class="container">
-        © 2018 MRK creative. All Rights Reserved.
-      </div>
-    </footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
 </body>
-
 </html>
